@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Learning Chatbot</title>
+  <link rel="stylesheet" href="chatbot-ui.css" />
+</head>
+<body>
+  <section>
+    <h1>Learning Path Chatbot</h1>
+    <p>Click the chat button to get started.</p>
+  </section>
+
+  <div id="chat-container"></div>
+
+  <script src="chatbot-ui.js"></script>
+  <script>
+    createChatBot(
+      "https://hook.eu2.make.com/2zapkt3jsgdgnf3za0z5mfkhcoedt5ff", // Replace with your Make webhook
+      "./imgs/bot-logo.png",
+      "Light BOT",
+      "Hey, I am your personal lightbot",
+      "Server is down. Please contact the developer.",
+      "purple"
+    );
+  </script>
+</body>
+</html>
